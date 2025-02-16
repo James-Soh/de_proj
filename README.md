@@ -2,7 +2,7 @@
 ## Overview
 
 
-This project utilizes open source tools to build an ELT pipeline to orchestrate aviation data from [AviationStack](https://aviationstack.com/) to a locally hosted [MinIO](https://min.io/) S4 compatible storage service to PostgreSQL databases which serves as a Data Warehouse.
+This project utilizes open source tools to build an ELT pipeline to orchestrate aviation data from [AviationStack](https://aviationstack.com/) to a locally hosted [MinIO](https://min.io/) S3 compatible storage service to PostgreSQL databases which serves as a Data Warehouse.
 
 <!--
 The repository directory structure is as follows:
