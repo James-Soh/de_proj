@@ -36,6 +36,9 @@ To build this project, the following tools were used:
 - Minio
 - PostgresSQL
 
+## Presentation Slides
+
+https://docs.google.com/presentation/d/1kOzDPCjcT0nbC7OtCxFvt4EtXc--3zHPkXjP-17YF1c/edit?usp=sharing
 
 <!--
 ## Architecture
