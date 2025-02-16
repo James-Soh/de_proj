@@ -2,16 +2,9 @@
 ## Overview
 
 
-This project utilizes 
+This project utilizes open source tools to build an ELT pipeline to orchestrate aviation data from [AviationStack](https://aviationstack.com/) to a locally hosted [MinIO](https://min.io/) S4 compatible storage service to PostgreSQL databases which serves as a Data Warehouse.
 
-AWS Cloud Services to build an efficient ETL pipeline for processing YouTube video statistics data. The data, available [here](https://kaggle.com/datasnaek/youtube-new), is downloaded from Kaggle and uploaded to an S3 bucket. AWS Glue catalogs the data, enabling seamless querying using Amazon Athena. The pipeline processes both JSON and CSV data, converting them into Parquet format. JSON data is transformed using AWS Lambda functions with AWS Data Wrangler layers, while CSV data is processed through visual ETL jobs in AWS Glue.
-
-Data is first stored in a Minio bucket (S3 bucket compatible), 
-
-then cleaned and organized in a cleansed bucket, and finally joined and stored in an analytics or materialized bucket. Automated ETL jobs run daily using AWS Glue workflows, ensuring up-to-date data processing. A simple QuickSight dashboard visualizes the cleansed data, providing valuable insights into YouTube video performance across different regions. This setup ensures a scalable and efficient data processing workflow, facilitating detailed analysis and reporting.
-
-
-
+<!--
 The repository directory structure is as follows:
 ```
 ├── assets/                        <- Includes assets for the repo.
@@ -33,7 +26,7 @@ The repository directory structure is as follows:
 ├── README.md                      <- The top-level README for developers using this project.
 
 ```
-
+-->
 
 
 ## Tools 
@@ -43,3 +36,34 @@ To build this project, the following tools were used:
 - Python
 - Minio
 - PostgresSQL
+
+
+<!--
+## Architecture
+
+Following is the architecture of the project.
+
+<p align='center'>
+  <img src='https://github.com/waqarg2001/Youtube-Data-Pipeline-AWS/blob/main/assets/AWS_Python_ETL_Project_Architecture.png' height=385 width=650>
+</p>  
+
+## Dashboard
+
+Access simplified dashboard from <a href='https://github.com/waqarg2001/Youtube-Data-Pipeline-AWS/blob/main/assets/dashboard.pdf'>here</a>.
+
+
+## Screenshots
+
+Following are project execution screenshots from AWS portal.
+
+<img src="https://github.com/waqarg2001/Youtube-Data-Pipeline-AWS/blob/main/assets/ss1.png" width=900 height=400>
+<br>
+<img src="https://github.com/waqarg2001/Youtube-Data-Pipeline-AWS/blob/main/assets/ss2.png" width=900 height=400>
+
+## Support
+
+If you have any doubts, queries, or suggestions then, please connect with me on any of the following platforms:
+
+[![Linkedin Badge][linkedinbadge]][linkedin] 
+[![Gmail Badge][gmailbadge]][gmail]
+-->
