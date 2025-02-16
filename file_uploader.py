@@ -3,13 +3,20 @@ from minio.error import S3Error
 
 import os
 from datetime import date
+from dotenv import load_dotenv
+
+load_dotenv('secret.env')
+minio_endpoint = os.getenv("MINIO_ENDPOINT")
+minio_access_key = os.getenv("MINIO_ACCESS_KEY")
+minio_secret_key = os.getenv("MINIO_SECRET_KEY")
 
 def main():
     # Create a client with the MinIO server playground, its access key and secret key.
-    client = Minio("172.22.143.31:9000",
-        access_key="IOYsPkyt2Rj6BIDmhTCp",
-        secret_key="Qbd7sEWR26XwoFf08QClMD3oBzZjBrOOjvEcFXHM",
-        secure=False, # https://stackoverflow.com/questions/71123560/getting-ssl-wrong-version-number-wrong-version-number-when-working-with-mini
+    client = Minio(
+        endpoint = minio_endpoint,
+        access_key = minio_access_key,
+        secret_key = minio_secret_key,
+        secure = False, # https://stackoverflow.com/questions/71123560/getting-ssl-wrong-version-number-wrong-version-number-when-working-with-mini
     )
 
     # The destination bucket and filename on the MinIO server
